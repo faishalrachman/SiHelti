@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/action_home"
+            android:enabled="true"
+            android:icon="@drawable/home_btn"
+            android:title="Home"/>
+    <item
+            android:id="@+id/action_berita"
+            android:enabled="true"
+            android:title="Berita"
+            android:icon="@drawable/berita_btn"/>
+    <item
+            android:id="@+id/action_diagnosis"
+            android:enabled="true"
+            android:title="Diagnosis"
+            android:icon="@drawable/diagnosis_btn"/>
+    <item
+            android:id="@+id/action_riwayat"
+            android:enabled="true"
+            android:title="Riwayat"
+            android:icon="@drawable/riwayat_btn"/>
+    <item
+            android:id="@+id/action_profil"
+            android:enabled="true"
+            android:title="Profil"
+            android:icon="@drawable/profile_btn"/>
+</menu>

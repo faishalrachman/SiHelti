@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DiagnosaActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:tint="@android:color/white"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gejala"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/back"
+                android:layout_toRightOf="@+id/back"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/editGejala"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:inputType="text|textMultiLine"
+        android:layout_below="@id/appBar"
+        android:layout_width="match_parent"
+        android:gravity="top"
+        android:hint="Tuliskan gejala yang anda alami..."
+        android:layout_height="300dp"
+        android:background="@drawable/card_background"
+        />
+    <Button
+        android:layout_below="@+id/editGejala"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Diagnosa"
+        android:background="@drawable/button_background"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="50dp"/>
+
+
+</RelativeLayout>
